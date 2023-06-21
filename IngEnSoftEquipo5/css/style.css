@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Dosis:wght@500&family=Lato:wght@300&family=Pathway+Gothic+One&display=swap');
+/*
+    Font Styles Exported
+font-family: 'Alegreya Sans', sans-serif; -  Header titles
+font-family: 'Dosis', sans-serif; - Slide and Bar Menu
+font-family: 'Pathway Gothic One', sans-serif; - Titles
+font-family: 'Lato', sans-serif; - Text
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 0;
+    background: none;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(228, 225, 225);
+    display: flex;
+    flex-direction: column;
+}
+.index{
+    background-image: url('../img/headerSoftware.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.indexMain{
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.quizzMain{
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.indexMainText{
+    color: white;
+    text-align: justify;
+    font-size: 1.75vw;
+    margin: 0 1vw 0 1vw;
+}
+main{
+    background: white;
+    display: block;
+    margin: 50px auto 50px auto;
+    width: 90%;
+    min-height: 50vh;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+}
+.mainTitle{
+    margin: 0 20px 30px 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+.indexMainTitle{
+    margin: 0 20px 30px 20px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: white;
+}
+header{
+    width: 100%;
+}
+.headerFondo{
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerTitle{
+    color: white;
+    font-size:7vw;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+.menuIconButton{
+    position: fixed;
+    margin: 5px;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: ease-in-out .3s;
+}
+.menuIconButton:hover{
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    transform: rotate(360deg);
+}
+.menuIcon{
+    height: 80px;
+    width: auto;
+}
+.menuBar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.menuBar > li{
+    flex: 1 1 20em;
+    text-align: center;
+    position: relative;
+    background: rgb(73, 70, 70);
+    margin: 0 3px 6px 3px;
+}
+.menuBar>li>a{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    color: white;
+    font-size:medium;
+    justify-content: center;
+    font-weight: 900;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.menuBar>li>div{
+    background: white;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    position:absolute;
+    transition: .3s;
+}
+.menuBar>li:hover>div{
+    background: white;
+    width: 100%;
+}
+#slideMenu{
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgb(122, 122, 122);
+    transition: .4s;
+    left: -400px;
+    padding: 90px 30px 0 30px;
+}
+.slideOptions>li{
+    margin: 15px 0 20px 0;
+    overflow: hidden;
+}
+.slideOptions>li>a{
+    padding: 25px 0 10px 15px;
+    font-size: 40px;
+    color: whitesmoke;
+    font-weight: 100;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.slideOptions>li>a:hover{
+    font-weight: 900;
+}
+
+footer{
+    background: rgb(73, 70, 70);
+    color: rgb(165, 174, 177);
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+footer>*{
+    flex: 1 1 20em;
+    display: flex;
+    justify-content: center;
+}
+.footerNav{
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    height: 30px;
+    align-items: center;
+    width: fit-content;
+
+}
+.footerNav>li{
+    background: rgb(73, 70, 70);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 9px 0 9px;
+    
+}
+.footerNav>li>a:hover{
+    cursor: pointer;
+    color: rgb(207, 214, 216);
+    
+
+}
+.footerNav>li>a{
+    color: rgb(165, 174, 177);
+
+}
+.designBy{
+    margin: 0 3px 0 3px;
+}
+.socialMedia{
+    display: flex;
+}
+.socialMedia>a>img{
+    height: 30px;
+}
+.socialMedia>a{
+    margin: 10px 5px 10px 5px;
+    position: relative;
+    top: 0;
+    transition: top ease .4s;
+}
+.socialMedia>a:hover{
+    top: -10px;
+}
+.eticaIngeniero{
+    padding-left: 2vw;
+}
+.eticaIngeniero>li>h2{
+    font-family: 'Pathway Gothic One', sans-serif;
+    cursor: pointer;
+    transition: .2s;
+}
+.eticaIngeniero>li>h2:hover{
+    color: gray;
+}
+.eticaIngeniero>li>p{
+    font-family: 'Lato', sans-serif;
+    padding-left: 2vw;
+    max-height: 0px;
+    transition: max-height 1s ease-out;
+    overflow: hidden;
+    text-align: justify;
+}
+.mapaCurricular{
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+.mapaText{
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+}
+.mapaList{
+    padding: 30px;
+    background-color: rgb(248, 248, 248);
+}
+.mapaList>li,.mapaList{
+    overflow: visible;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.mapaContainer{
+    display: grid;
+    margin-bottom: 30px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+.cicloEtapas{
+    margin: 30px;
+}
+.cicloEtapas>li{
+    display: flex;
+    min-height: 200px;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    
+}
+.cicloEtapas>li>p{
+    font-size: 100px;
+    text-align: center;
+    min-width: 200px;
+    display: inline;
+}
+.cicloEtapas>li>div>p{
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+}
+.rup{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.rupImg{
+    justify-self: center;
+    grid-row: span 2;
+    height: auto;
+    width: 100%;
+}
+.rupFases{
+    margin-top: 30px;
+    padding: 0 15px 15px 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-gap: 20px;
+    overflow: hidden;
+}
+.rupFases>*{
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    transition: .2s;
+}
+.rupFases>div:hover{
+    transform: scale(1.05);
+}
+.rupText{
+    margin: 60px 2.5vw 0 2.5vw;
+}
+.rupDisciplinas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    margin: 20px 4vw 20px 4vw;
+}
+.rupDisciplinas>div{
+    border-top: 1px solid gray;
+}
+.rupRoles{
+    margin: 30px 4vw 20px 4vw;
+}
+.rupRoles>h1,.rupRoles>p{
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+}
+.rupRoles>div{
+    padding: 0 2vw 10px 2vw;
+    text-align: justify;
+}
+.rupRoles>p{
+    margin: 10px;
+    color: rgb(71, 71, 71);
+    font-family: 'Lato', sans-serif;
+}
+@media screen and (max-width: 800px) {
+    .mapaList,.rupFases>*,.rup>*,.rupDisciplinas>*{
+        grid-column: 1/-1 !important;
+    }
+    .cicloEtapas>li>p{
+        visibility: hidden;
+        width: 2vw;
+        min-width: 0;
+    }
+}
